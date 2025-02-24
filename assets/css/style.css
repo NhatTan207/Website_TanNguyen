@@ -1,0 +1,355 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --font-heading: "Sen", serif;
+  --primary-color: #ffb900;
+}
+html {
+  font-size: 62.5%;
+}
+/* Khôi phục cỡ chữ theo REM */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", serif;
+  height: 1000px;
+}
+.header .main_content .body img {
+  width: 9.3rem;
+  object-fit: cover;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* common */
+a {
+  text-decoration: none;
+}
+.heading-lv2 {
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
+.btn {
+  cursor: pointer;
+  line-height: 50px;
+  min-width: 118px;
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 999px;
+  background-color: #171100;
+  display: inline-block;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+/* ---------------- */
+.header .main_content .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0px 8px;
+}
+.header .main_content .body .nav ul {
+  display: flex;
+}
+.header .main_content .body .nav {
+  margin-left: auto;
+  padding-right: 49px;
+}
+.main_content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav a {
+  font-size: 1.6rem;
+  color: #5f5b53;
+  padding: 8px 21px;
+  position: relative;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  text-shadow: 1px 0 0 currentColor;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.09);
+}
+.nav li.active a::after {
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #171100;
+  display: block;
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+}
+.header .btn_sign_Up {
+  min-width: 114px;
+}
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  background-color: #fffcf4;
+  z-index: 2;
+}
+.header.fix {
+  position: sticky;
+  top: -28px;
+}
+.header .main_content .body img {
+  margin-right: 100px;
+}
+
+.hero .media-block img {
+  width: 24px;
+}
+/* hero */
+.hero {
+  padding: 56px 0px 65px;
+  background-color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+}
+.hero .media-block {
+  width: 48%;
+  position: relative;
+}
+
+.hero .media-block .Tan {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.hero .hero-sumary {
+  padding: 24px;
+  width: 270px;
+  position: absolute;
+  bottom: 48px;
+  right: 0px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.hero-sumary .item {
+  display: flex;
+  align-items: center;
+}
+.hero-sumary .item + .item {
+  margin-top: 8px;
+}
+.hero .hero-sumary .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-sumary .icon2 {
+  background-color: #7574722a;
+  align-self: center;
+}
+.hero .hero-sumary .icon1 {
+  background-color: rgba(15, 44, 211, 0.144);
+}
+.hero .hero-sumary .icon3 {
+  background-color: rgb(240, 248, 255);
+  align-self: center;
+}
+.hero .hero-sumary .info {
+  margin-left: 16px;
+}
+.hero .hero-sumary .label {
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.hero-sumary .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.67;
+}
+/* right block */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+.hero .heading {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 5.8rem;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: -1.15px;
+}
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.hero .cta-group {
+  margin-top: 38px;
+  display: flex;
+
+  align-items: center;
+}
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+.hero .watch-video {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  cursor: pointer;
+}
+.fa-play {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+}
+.hero .watch-video span {
+  margin-left: 14px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.hero .desc-recent {
+  margin-top: 48px;
+}
+.hero .stats {
+  margin-top: 8px;
+}
+.hero .desc strong {
+  font-size: 4.4rem;
+  font-weight: 700;
+  font-family: var(--font-heading);
+  line-height: 1.23;
+  color: #171100;
+  margin-right: 15px;
+}
+.hero .stats strong:nth-child(2) {
+  margin-left: 28px;
+}
+.highlight {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+/* ===================popular================ */
+.popular {
+  padding: 65px 0;
+  margin-top: 135px;
+}
+.popular-top .desc {
+  font-family: var(--font-heading);
+  margin-top: 16px;
+  width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-top .control-btn {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.popular-top .control-btn:hover {
+  background-color: #ffb900;
+}
+.popular .course-list{
+  margin-top: 55px;
+  display: flex;
+/* background-color: beige; */
+gap: 30px;
+}
+.star{
+  width: 15px;
+  height: 15px;
+}
+.popular .course-item .thumb{
+width: 100%;
+border-radius: 12px 12px 0px 0px;
+height: 278px;
+object-fit: cover;
+}
+.popular .course-item{
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #e2dfda;
+
+}
+.popular .course-item .info{
+  padding: 16px 22px 22px;
+}
+.popular .course-item .foot,
+.popular .course-item .rating,
+.popular .course-item .head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-item .title a{
+  color: #171100;
+  font-size: 1.8;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .rating .value {
+  margin-left: 6px;
+  color: #ffb900;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.popular .course-item .desc{
+  margin-top: 6px;
+  line-height: 1.86;
+}
+.popular .course-item .foot{
+  margin-top: 12px;
+}
+.popular .course-item .prices{
+  color: #171100;
+  font-size: 1.8;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .course-item .btn-book{
+  border: none;
+}
+.popular .course-item .btn-book:hover{
+  background: var(--primary-color);
+  cursor: pointer;
+}
+.popular .course-item:hover{
+  border-radius: 12px;
+  border: 1px solid transparent;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
